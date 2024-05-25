@@ -11,7 +11,8 @@ function addRecommendation() {
       element.setAttribute("class","recommendation");
       element.innerHTML = "\<span\>&#8220;\</span\>" + recommendation.value + "\<span\>&#8221;\</span\>";
       // Add this element to the end of the list of recommendations
-      document.getElementById("all_recommendations").appendChild(element); 
+      document.getElementById("all_recommendations").appendChild(element);
+      showPopup(true);
       
       // Reset the value of the textarea
       recommendation.value = "";
@@ -25,4 +26,5 @@ function addRecommendation() {
       document.getElementById('popup').style.visibility = 'hidden'
     }
   }
+  
   
