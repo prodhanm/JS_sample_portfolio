@@ -324,4 +324,13 @@ body {
     border-radius: 6px;
     text-align: center;
     cursor: pointer;
+    font-weight: bolder;
+    text-decoration: underline;
   }
+
+  .topmenu:hover,
+    .topmenu.active {
+        color: black;
+        font-weight: bolder;
+        text-decoration: underline;
+    }
